@@ -1,13 +1,13 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import { AppProvider } from './context/AppContext';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import MovieDetailPage from './pages/MovieDetailPage';
-import LoginPage from './pages/LoginPage';
-import FavoritesPage from './pages/FavoritesPage';
-import NotFoundPage from './pages/NotFoundPage';
-import './App.css';
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { AppProvider } from "./context/AppContext";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import MovieDetailPage from "./pages/MovieDetailPage";
+import LoginPage from "./pages/LoginPage";
+import FavoritesPage from "./pages/FavoritesPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import "./App.css";
 
 export default function App() {
   return (
@@ -30,4 +30,3 @@ export default function App() {
     </AppProvider>
   );
 }
-
