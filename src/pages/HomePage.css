@@ -1,0 +1,41 @@
+.home-page { padding: 0; }
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: linear-gradient(135deg, var(--color-surface2) 0%, var(--color-surface) 100%);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
+  border: 1px solid var(--color-border);
+}
+
+.hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #fff 30%, var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.home-content {}
+
+.results-header {
+  margin-bottom: 1.2rem;
+}
+
+.results-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.results-count {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: 400;
+}

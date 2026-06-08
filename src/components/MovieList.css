@@ -1,0 +1,16 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.movie-list-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+  .movie-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}

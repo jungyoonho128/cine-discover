@@ -1,0 +1,109 @@
+.detail-page { padding: 1rem 0; }
+
+.back-btn {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: all var(--transition);
+}
+.back-btn:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+.detail-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.detail-poster img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.detail-title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badge-rating { background-color: rgba(255,215,0,0.15); color: #ffd700; }
+.badge-year { background-color: var(--color-border); color: var(--color-text-muted); }
+.badge-genre { background-color: rgba(233,69,96,0.15); color: var(--color-primary); }
+.badge-runtime { background-color: rgba(100,180,255,0.1); color: #6ab4ff; }
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.detail-section p {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.cast-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cast-tag {
+  background-color: var(--color-surface2);
+  border: 1px solid var(--color-border);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.favorite-toggle-btn {
+  margin-bottom: 0.8rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1rem;
+}
+
+.login-hint {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.detail-not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.detail-not-found h2 { font-size: 1.5rem; margin-bottom: 0.8rem; }
+.detail-not-found p { color: var(--color-text-muted); margin-bottom: 1.5rem; }
+
+@media (max-width: 700px) {
+  .detail-container { grid-template-columns: 1fr; }
+  .detail-poster { max-width: 260px; margin: 0 auto; }
+}

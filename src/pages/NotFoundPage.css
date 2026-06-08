@@ -1,0 +1,34 @@
+.notfound-page {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.notfound-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notfound-code {
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--color-primary), #ff8c69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.notfound-content h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.notfound-content p {
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}

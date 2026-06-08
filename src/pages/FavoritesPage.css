@@ -1,0 +1,22 @@
+.favorites-page {}
+
+.favorites-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.favorites-header h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.favorites-header p {
+  color: var(--color-text-muted);
+}
+
+.empty-action {
+  text-align: center;
+  margin-top: 2rem;
+}

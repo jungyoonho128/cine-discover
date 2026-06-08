@@ -1,0 +1,87 @@
+/* ================================
+   전역 CSS 리셋 및 공통 스타일
+================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0f0f1a;
+  --color-surface: #1a1a2e;
+  --color-surface2: #16213e;
+  --color-primary: #e94560;
+  --color-primary-dark: #c73652;
+  --color-text: #e0e0f0;
+  --color-text-muted: #8888aa;
+  --color-border: #2a2a4a;
+  --color-card: #1e1e35;
+  --color-card-hover: #252540;
+  --border-radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --transition: 0.2s ease;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn-primary:hover { background-color: var(--color-primary-dark); }
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+.btn-outline:hover { background-color: var(--color-primary); color: #fff; }
+
+.btn-full { width: 100%; }
+
+.btn-favorited {
+  background-color: #5a2a3a;
+  color: #ff8aaa;
+  border: 2px solid #ff6688;
+}
+.btn-favorited:hover { background-color: #7a2a3a; }
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: underline;
+  padding: 0;
+}
