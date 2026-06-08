@@ -66,7 +66,12 @@ export default function MovieDetailPage() {
 
       <div className="detail-container">
         <div className="detail-poster">
-          <img src={movie.poster} alt={`${movie.title} 포스터`} />
+          <img
+            src={
+              movie.poster.startsWith("/") ? import.meta.env.BASE_URL.replace(/\/$/, "") + movie.poster : movie.poster
+            }
+            alt={`${movie.title} 포스터`}
+          />
         </div>
         <div className="detail-info">
           <h1 className="detail-title">{movie.title}</h1>

@@ -45,7 +45,11 @@ export default function MovieCard({ movie, showFavoriteBtn = true }: MovieCardPr
       aria-label={`${movie.title} 상세보기`}
     >
       <div className="movie-card-poster">
-        <img src={movie.poster} alt={`${movie.title} 포스터`} loading="lazy" />
+        <img
+          src={movie.poster.startsWith("/") ? import.meta.env.BASE_URL.replace(/\/$/, "") + movie.poster : movie.poster}
+          alt={`${movie.title} 포스터`}
+          loading="lazy"
+        />
         <div className="movie-card-overlay">
           <span className="movie-rating">⭐ {movie.rating}</span>
           {showFavoriteBtn && (
